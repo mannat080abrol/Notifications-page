@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="top-bar">
+        <div class="title">
+          <p class="title-text">Notifications</p>
+          <p class="num" id="num">3</p>
+        </div> <!-- title closed -->
+        <a href="#" class="read" id="read">Mark all as read</a>
+      </div> <!--  top bar closed -->
+
+      <div class="notifications">
+        <!-- Single notification-box1 starts -->
+        <div class="single-box">
+          <div class="avatar">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="">
+          </div> <!--imageclosed -->
+          <div class="box-text">
+            <p class="txt">
+              <a href="#" class="name">Mark Weber</a> reacted to your recent post
+              <a href="#" class="post">My first post tournament today!</a>
+              <span class="dot"></span> <!--this is to represent unread notifications -->
+            </p>
+            <p class="time">1m ago</p>
+          </div>
+        </div>
+        <!-- single notification-box1 closed-->
+
+        <!-- Single notification-box2 starts -->
+        <div class="single-box">
+          <div class="avatar">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="">
+          </div> <!--imageclosed -->
+          <div class="box-text">
+            <p class="txt">
+              <a href="#" class="name">Angela Gray</a> followed you <span class="dot"></span>
+            </p>
+            <p class="time"> 5m ago</p>
+          </div>
+        </div>
+        <!-- single notification-box2 closed-->
+
+        <!-- Single notification-box3 starts -->
+        <div class="single-box">
+          <div class="avatar">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+          </div> <!--imageclosed -->
+          <div class="box-text">
+            <p class="txt">
+              <a href="#" class="name"> Jacob Thompson</a>has joined your group<a href="#" class="chess">Chess Club</a>
+              <span class="dot"></span>
+            </p>
+            <p class="time">1 day ago</p>
+          </div>
+        </div>
+        <!-- single notification-box3 closed-->
+
+        <!-- Single notification-box4 starts -->
+        <div class="single-box with-msg">
+          <div class="avatar">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          </div> <!--imageclosed -->
+          <div class="box-text">
+            <p class="txt">
+              <a href="#" class="name"> Rizky Hasanuddin </a> sent you a private message
+            </p>
+            <p class="time"> 5 days ago </p>
+            <div class="message with-msg">
+              <p>
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                I'm already having lots of fun and improving my game.</p>
+            </div>
+          </div>
+        </div>
+        <!-- single notification-box4 closed-->
+
+        <!-- Single notification-box5 starts -->
+        <div class="single-box-comment">
+          <div class="left">
+            <div class="avatar">
+              <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+            </div> <!--imageclosed -->
+            <div class="box-text">
+              <p class="notifi">
+                <a href="#" class="name"> Kimberly Smith</a> commented on your picture
+              </p>
+              <p class="time">1 week ago
+              </p>
+            </div>
+          </div>
+
+          <div class="img-box">
+            <img src="./assets/images/image-chess.webp" alt="">
+          </div>
+        </div>
+
+        <!-- single notification-box5 closed-->
+
+        <!-- Single notification-box6 starts -->
+        <div class="single-box">
+          <div class="avatar">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="">
+          </div> <!--imageclosed -->
+          <div class="box-text">
+            <p class="txt">
+              <a href="#" class="name"> Nathan Peterson</a>reacted to your recent post<a href="#" class="post"> 5
+                end-game strategies to increase your win rate</a>
+            </p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+        <!-- single notification-box6 closed-->
+
+
+        <!-- Single notification-box7 starts -->
+        <div class="single-box">
+          <div class="avatar">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="">
+          </div> <!--imageclosed -->
+          <div class="box-text">
+            <p class="txt">
+              <a href="#" class="name"> Anna Kim</a> left the group <a href="#" class="chess">Chess Club</a>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+        <!-- single notification-box7 closed-->
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js">
+
+  </script>
+
+
+
+</body>
+
+</html>
